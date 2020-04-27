@@ -119,7 +119,7 @@ main section.top {
 
 main section.top h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 4vw;
+  font-size: 9vw;
   color: white;
   mix-blend-mode: screen;
 }
@@ -157,11 +157,10 @@ main section.top h1 .smallText {
 }
 
 main section.top sub {
-  font-size: 1.2vw;
+  font-size: 3.2vw;
 }
 
 main section.mission {
-  margin-top: 10em;
   margin-bottom: 10em;
   padding: 5em 3em;
   background-color: white;
@@ -200,7 +199,7 @@ main section.about {
 
 main section.about div {
   position: relative;
-  width: 60vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,6 +217,7 @@ main section.about div {
 
 main section.about div p {
   padding: 2em;
+  font-size: 1.2em;
   width: 50%;
 }
 
@@ -253,6 +253,10 @@ main section.contact form {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50vw;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 input[type=text], select, textarea {
