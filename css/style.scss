@@ -194,7 +194,7 @@ footer {
     position: relative;
     height: 500px;
     overflow: hidden;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: flex-end;
 
@@ -204,6 +204,45 @@ footer {
         align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 2em;
+
+        section:first-child {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            .footer-section { 
+                h5 {
+                    margin-bottom: 0.8em;
+                }
+
+                ul {
+                    list-style-type: none;
+        
+                    li {
+                        font-size: 0.8em;
+                        line-height: 1.5em;
+
+                        a {
+                            color: rgba(255, 255, 255, 0.7);
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    grid-column: 1 / span 2;
+                }
+            }
+        }
+
+        section {
+            p {
+                font-size: 0.8em;
+            }
+        }
     }
 
     img {
