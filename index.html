@@ -4,41 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slip | Home</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"></head>
 <body>
+    <nav>
+        <ul>
+            <a class="active" href="#"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </nav>
     <header>
-        <img src="logo" alt="Logo - Slip">
-        <nav>
-            <ul>
-                <a class="active" href="#"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#contact"><li>Contact</li></a>
-            </ul>
-        </nav>
+        <!-- <img src="logo" alt="Logo - Slip"> -->
+        <div class="banner"><h1>Slip</h1></div>
+        <div class="company">
+            <h1>Social Life<br>Instant Performance</h1>
+            <sub>Improve people in the digital world</sub>
+        </div>
+        <img id="headerImg" src="img/Online Library.svg" alt="Vector Library image">
+        <div class="bottom">
+            <img id="downArrow" src="img/DownArrow.svg" alt="Down Arrow">
+        </div>
     </header>
     <main>
-        <img class="mainBackground" src="img/architecture-black-and-white.jpg" alt="computer">
-        <section class="top">
-            <h1><span class="lineWrap">Social</span><br>
-                <span class="lineWrap">Life</span><br>
-                <span class="lineWrap">Instant</span><br>
-                <span class="lineWrap">Performance</span>
-            </h1>
-            <sub>Improve the people in the digital world.</sub>
-        </section>
-        <section class="mission">
-            <h2>Onze Visie</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus deserunt repudiandae. Animi minima hic fuga modi, rerum nisi repellendus commodi, at debitis, ab deleniti iusto libero velit expedita nobis.</p>
-        </section>
-        <section id="about" class="about">
-            <h2>About</h2>
+        <section id="about" class="contained card">
+            <h2>Over Ons</h2>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus deserunt repudiandae. Animi minima hic fuga modi, rerum nisi repellendus commodi, at debitis, ab deleniti iusto libero velit expedita nobis.</p>
-                <img src="img/shake-hand.jpg" alt="Shake hand">
+                <p>
+                    <img src="img/Creativity Education.svg" alt="Creativity">
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti dicta, recusandae error minima exercitationem accusamus ratione. Atque mollitia consequatur laborum quaerat maxime rem odit tempora exercitationem, reprehenderit totam nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti dicta, recusandae error minima exercitationem accusamus ratione. Atque mollitia consequatur laborum quaerat maxime rem odit tempora exercitationem, reprehenderit totam nesciunt?</p>
             </div>
         </section>
-        <section id="contact" class="contact">
+        <section id="whoAreWe">
+            <h2>Wie zijn wij?</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
+                    <hr>
+                    <p class="name">John Doe</p>
+                </article>
+                <article class="card">
+                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
+                    <hr>
+                    <p class="name">John Doe</p>
+                </article>
+                <article class="card">
+                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
+                    <hr>
+                    <p class="name">John Doe</p>
+                </article>
+            </div> 
+        </section>
+        <section id="contact" class="contained card">
             <h2>Contact</h2>
             <form action="mailto:sociallifeinstantperformance@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
                 <label for="name">Naam:</label>
@@ -52,7 +73,36 @@
         </section>
     </main>
     <footer>
-        <p>All rights reserverd - Design by Slip B.V.</p>
+        <div class="contained">
+            <section>
+                <div>
+                    <h5>Sitemap</h5>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Socialmedia</h5>
+                    <ul>
+                        <li>LinkedIn</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <ul>
+                        <li>SocialLifeInstantPerformance@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <p>Copyright © 2020 All rights reserverd - Design by Slip B.V.</p>
+            </section>
+        </div>
+        <img src="img/Footershape.svg" alt="Cloud">
     </footer>
 </body>
 </html>
