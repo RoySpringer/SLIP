@@ -289,6 +289,12 @@ footer {
     padding: 2em;
 }
 
+.form-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 input[type=text], select, textarea {
     font-family: 'Comforta';
     width: 100%;
