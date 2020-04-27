@@ -99,9 +99,27 @@ header {
           align-items: center;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-30px) skewY(1deg);
+          transform: translateY(-30px) skewY(1deg);
+  overflow: hidden;
 }
 
-header .banner {
+header .header-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skewY(-1deg);
+          transform: skewY(-1deg);
+  overflow: hidden;
+}
+
+header .header-container .banner {
   height: 100%;
   width: 6em;
   margin-left: 2em;
@@ -117,36 +135,36 @@ header .banner {
           justify-content: flex-start;
 }
 
-header .banner h1 {
+header .header-container .banner h1 {
   color: #ABBFDA;
   font-size: 5em;
   -webkit-transform: rotate(-90deg) translateY(-30px);
           transform: rotate(-90deg) translateY(-30px);
 }
 
-header .company {
+header .header-container .company {
   z-index: 1;
   margin-left: 2em;
 }
 
-header .company h1 {
+header .header-container .company h1 {
   font-size: 4.3em;
   line-height: 0.9em;
 }
 
-header .company sub {
+header .header-container .company sub {
   color: #FCCA3D;
   font-size: 1.3em;
 }
 
-header #headerImg {
+header .header-container #headerImg {
   position: absolute;
   right: 1em;
   width: 40%;
   z-index: 0;
 }
 
-header .bottom {
+header .header-container .bottom {
   position: absolute;
   width: 100%;
   left: 0;
@@ -157,6 +175,10 @@ header .bottom {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main {
+  margin-bottom: -500px;
 }
 
 main section {
@@ -224,7 +246,7 @@ main section h2 {
 
 footer {
   position: relative;
-  height: 500px;
+  height: 840px;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.7);
   display: -webkit-box;
@@ -299,8 +321,8 @@ footer .contained section p {
 footer img {
   z-index: -1;
   position: absolute;
-  top: -340px;
-  left: -450px;
+  top: 0px;
+  left: -350px;
 }
 
 .contained {
