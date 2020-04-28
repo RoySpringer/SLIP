@@ -17,13 +17,12 @@
     </nav>
     <header>
         <div class="header-container">
-            <!-- <img src="logo" alt="Logo - Slip"> -->
             <div class="banner"><h1>Slip</h1></div>
             <div class="company">
                 <h1>Social Life<br>Instant Performance</h1>
                 <sub>Improve people in the digital world</sub>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="829.525" height="598" viewBox="0 0 829.525 598">
+            <svg id="headerImg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="829.525" height="598" viewBox="0 0 829.525 598">
                 <defs>
                   <linearGradient id="linear-gradient" x1="0.982" y1="0.556" x2="-0.321" y2="0.434" gradientUnits="objectBoundingBox">
                     <stop offset="0" stop-color="#fff"/>
@@ -333,42 +332,47 @@
                 <p>
                     <img src="img/Creativity Education.svg" alt="Creativity">
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti dicta, recusandae error minima exercitationem accusamus ratione. Atque mollitia consequatur laborum quaerat maxime rem odit tempora exercitationem, reprehenderit totam nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti dicta, recusandae error minima exercitationem accusamus ratione. Atque mollitia consequatur laborum quaerat maxime rem odit tempora exercitationem, reprehenderit totam nesciunt?</p>
+                <p>SLIP B.V. is een startup in de onderwijssector, gevestigd te Dordrecht. SLIP staat voor Social Life Instant
+                  Performance en is recentelijk opgericht om een gamified social media platform voor de onderwijsmarkt te
+                  ontwikkelen. SLIP probeert manieren te ontwikkelen om de snel veranderende wereld en alles wat daarbij
+                  komt kijken te vertalen naar het onderwijs vanuit een interdisciplinair en gamification perspectief. SLIP
+                  heeft expertise op het gebied van ontwikkeling van onderwijs en digitale content ontwikkeling.</p>
             </div>
         </section>
         <section id="whoAreWe">
             <h2>Wie zijn wij?</h2>
             <div class="card-container">
                 <article class="card">
-                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
+                    <img src="img/Nermin.jpg" alt="Person">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
                     <hr>
-                    <p class="name">John Doe</p>
+                    <p class="name">Nermin Kadiric</p>
                 </article>
                 <article class="card">
-                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
+                    <img src="https://via.placeholder.com/200" alt="Person">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
                     <hr>
-                    <p class="name">John Doe</p>
+                    <p class="name">Abdel Agharbi</p>
                 </article>
                 <article class="card">
-                    <img src="img/person-holding-white-light-bulb-3651820.jpg" alt="Person">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus. Aliquid recusandae iusto fugit.</p>
+                    <img src="img/Roy.jpg" alt="Person">
+                    <p>Ik ben Roy Springer medeoprichter van Slip B.V..Ik ben vanuit de Game Industrie terecht gekomen in de onderwijswereld. 
+                      Ik heb veel kennis van digitale tools, gamification en neem ik altijd de creativiteit uit de Game industrie mee in alle projecten. Ik zet mijn creativiteit in om de digitale wereld, gamification, bedrijven en scholen met elkaar te verbinden.</p>
                     <hr>
-                    <p class="name">John Doe</p>
+                    <p class="name">Roy Springer</p>
                 </article>
             </div> 
         </section>
         <section id="contact" class="contained card">
             <h2>Contact</h2>
-            <form action="mailto:sociallifeinstantperformance@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
+            <form id="contactForm" action="mailto:sociallifeinstantperformance@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
                 <label for="name">Naam:</label>
                 <input type="text" name="name">
                 <label for="subject">Onderwerp:</label>
                 <input type="text" name="subject">
                 <label for="body">Bericht:</label>
                 <textarea name="body"></textarea>
-                <div class="form-bottom"><button>Verstuur</button></div>
+                <div class="form-bottom"><button >Verstuur</button></div>
             </form>
         </section>
     </main>
@@ -385,16 +389,17 @@
                 </div>
                 <div class="footer-section">
                     <h5>Socialmedia</h5>
-                    <ul>
+                    <!-- <ul>
                         <li>LinkedIn</li>
                         <li>Facebook</li>
                         <li>Instagram</li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-section last">
                     <h5>Contact</h5>
                     <ul>
-                        <li><a href="mailto:SocialLifeInstantPerformance@gmail.com">SocialLifeInstantPerformance@gmail.com</a></li>
+                        <li>KvK-nummer: 77722124</li>
+                        <li>E-mail: <a href="mailto:SocialLifeInstantPerformance@gmail.com">SocialLifeInstantPerformance@gmail.com</a></li>
                     </ul>
                 </div>
             </section>
@@ -404,5 +409,24 @@
         </div>
         <img src="img/Footershape.svg" alt="Cloud">
     </footer>
+    <script>
+      let contactForm = document.getElementById("contactForm");
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let formData = new FormData(contactForm);
+        if(formData.has("name") && formData.has("subject") && formData.has("body")) {
+          let hasValues = true;
+          for(let value of formData.values()) {
+            if(value.length == 0) {
+              hasValues = false;
+            }
+          }
+          if(hasValues) {
+            window.open(`mailto:sociallifeinstantperformance@gmail.com?subject=${encodeURI(formData.get("subject"))}&body=${encodeURI(formData.get("body") + "\n\nMet Vriendelijke groet,\n\n")}${formData.get("name")}`);
+          }
+        }
+      });
+
+    </script>
 </body>
 </html>

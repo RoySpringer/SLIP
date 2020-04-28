@@ -133,7 +133,8 @@ header {
         #headerImg {
             position: absolute;
             right: 1em;
-            width: 40%;
+            width: 55%;
+            height: auto;
             z-index: 0;
         }
     
@@ -179,11 +180,15 @@ main {
 #whoAreWe {
     article {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         text-align: center;
         // width: 30%;
+
+        p {
+            line-height: 1.6em;
+        }
 
         img {
             width: 7em;
@@ -205,6 +210,7 @@ main {
 }
 
 footer {
+    z-index: -1;
     position: relative;
     height: 840px;
     overflow: hidden;
@@ -213,6 +219,7 @@ footer {
     align-items: flex-end;
 
     .contained {
+        width: 100%;
         bottom: 2em;
         display: flex;
         align-items: flex-end;
@@ -255,6 +262,7 @@ footer {
         section {
             p {
                 font-size: 0.8em;
+                line-height: 1.5em;
             }
         }
     }
@@ -268,7 +276,7 @@ footer {
 }
 
 .contained {
-    width: 1000px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
