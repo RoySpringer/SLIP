@@ -1,0 +1,157 @@
+.svg-arrow {
+    animation: pointingArrow 3s ease-in-out infinite;
+}
+
+.svg-circle {
+    animation: pointingCircle 3s ease-in-out 200ms infinite;
+}
+
+#footleft {
+    animation: moveFoot 2s ease-in-out 200ms infinite;
+}
+
+#body {
+    transform-origin: 30% 40%;
+    animation: breathe 4s ease-in-out 400ms infinite;
+}
+
+#neck {
+    animation: breathe-neck 4s ease-in-out 400ms infinite;
+}
+
+#head {
+    transform-origin: 25% 10%;
+    animation: breathe-head 4s ease-in-out 400ms infinite;
+}
+
+#armleft {
+    animation: breathe-arm-left 4s ease-in-out 400ms infinite;
+}
+
+#hand {
+    animation: breathe-hand 4s ease-in-out 400ms infinite;
+}
+
+#armright {
+    animation: breathe-arm-right 4s ease-in-out 400ms infinite;
+}
+
+@keyframes breathe-arm-right {
+    0% {
+        transform: translate(103.231px, 62.408px)
+    }
+    20% {
+        transform: rotate(-0.5deg) translate(103.231px, 62.408px)
+    }
+    100% {
+        transform: translate(103.231px, 62.408px)
+    }
+}
+
+@keyframes breathe-hand {
+    0% {
+        transform: translate(-342.906px, 64.204px);
+    }
+    20% {
+        transform: rotate(-0.5deg) translate(-342.906px, 64.204px);
+    }
+    100% {
+        transform: translate(-342.906px, 64.204px);
+    }
+}
+
+@keyframes breathe-arm-left {
+    0% {
+        transform: translate(174.924px, 71.762px);
+    }
+    20% {
+        transform: rotate(-1deg) translate(171.924px, 71.762px)
+    }
+    100% {
+        transform: translate(174.924px, 71.762px);
+    }
+}
+
+@keyframes breathe-neck {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes breathe-head {
+    0% {
+        transform: rotate(0) translateY(0px);
+    }
+    30% {
+        transform: rotate(-3deg) translateY(-2px);
+    }
+    40% {
+        transform: rotate(3deg) translateY(-2px);
+    }
+    50% {
+        transform: rotate(-2deg) translateY(-1px);
+    }
+    60% {
+        transform: rotate(2deg) translateY(-1px);
+    }
+    70% {
+        transform: rotate(-3deg) translateY(-1px);
+    }
+    100% {
+        transform: rotate(0) translateY(0px);
+    }
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.015);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveFoot {
+    0% {
+        transform: translate(0px, -1.51px) rotate(0deg);
+    }
+    20% {
+        transform: translate(0px, -1.51px) rotate(7deg);
+    }
+    100% {
+        transform: translate(0px, -1.51px) rotate(0deg);
+    }
+}
+
+@keyframes pointingCircle {
+    0% {
+        transform: translate(36.811px, 0);
+    }
+    50% {
+        transform: translate(36.811px, 2em);
+    }
+    100% {
+        transform: translate(36.811px, 0);
+    }
+}
+
+@keyframes pointingArrow {
+    0% {
+        transform: translate(-897.189px, -965px);
+    }
+    50% {
+        transform: translate(-897.189px, calc(-965px + 2em));
+    }
+    100% {
+        transform: translate(-897.189px, -965px);
+    }
+}
