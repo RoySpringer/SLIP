@@ -47,6 +47,11 @@
           animation: breathe-arm-right 4s ease-in-out 400ms infinite;
 }
 
+#shadowman {
+  -webkit-animation: breathe-head-shadow 4s ease-in-out 400ms infinite;
+          animation: breathe-head-shadow 4s ease-in-out 400ms infinite;
+}
+
 @-webkit-keyframes breathe-arm-right {
   0% {
     -webkit-transform: translate(103.231px, 62.408px);
@@ -226,6 +231,68 @@
   100% {
     -webkit-transform: rotate(0) translateY(0px);
             transform: rotate(0) translateY(0px);
+  }
+}
+
+@-webkit-keyframes breathe-head-shadow {
+  0% {
+    -webkit-transform: translate(-181.255px, 98.807px);
+            transform: translate(-181.255px, 98.807px);
+  }
+  30% {
+    -webkit-transform: translate(-184.255px, 98.807px);
+            transform: translate(-184.255px, 98.807px);
+  }
+  40% {
+    -webkit-transform: translate(-178.255px, 98.807px);
+            transform: translate(-178.255px, 98.807px);
+  }
+  50% {
+    -webkit-transform: translate(-183.255px, 98.807px);
+            transform: translate(-183.255px, 98.807px);
+  }
+  60% {
+    -webkit-transform: translate(-179.255px, 98.807px);
+            transform: translate(-179.255px, 98.807px);
+  }
+  70% {
+    -webkit-transform: translate(-184.255px, 98.807px);
+            transform: translate(-184.255px, 98.807px);
+  }
+  100% {
+    -webkit-transform: translate(-181.255px, 98.807px);
+            transform: translate(-181.255px, 98.807px);
+  }
+}
+
+@keyframes breathe-head-shadow {
+  0% {
+    -webkit-transform: translate(-181.255px, 98.807px);
+            transform: translate(-181.255px, 98.807px);
+  }
+  30% {
+    -webkit-transform: translate(-184.255px, 98.807px);
+            transform: translate(-184.255px, 98.807px);
+  }
+  40% {
+    -webkit-transform: translate(-178.255px, 98.807px);
+            transform: translate(-178.255px, 98.807px);
+  }
+  50% {
+    -webkit-transform: translate(-183.255px, 98.807px);
+            transform: translate(-183.255px, 98.807px);
+  }
+  60% {
+    -webkit-transform: translate(-179.255px, 98.807px);
+            transform: translate(-179.255px, 98.807px);
+  }
+  70% {
+    -webkit-transform: translate(-184.255px, 98.807px);
+            transform: translate(-184.255px, 98.807px);
+  }
+  100% {
+    -webkit-transform: translate(-181.255px, 98.807px);
+            transform: translate(-181.255px, 98.807px);
   }
 }
 
