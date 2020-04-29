@@ -1,15 +1,18 @@
 $fontColorDark: #001237;
-$primaryColor: #5877B6;
-$secondaryColor: #FCCA3D;
-$primaryColorHighlight: #ABBFDA;
-$backgroundColor: #EFF8FF;
-$shadowColor: rgba($color: #000000, $alpha: 0.1);
+$primaryColor: #5877b6;
+$secondaryColor: #fcca3d;
+$primaryColorHighlight: #abbfda;
+$backgroundColor: #eff8ff;
+$shadowColor: rgba(
+    $color: #000000,
+    $alpha: 0.1,
+);
 $shadow: 0 3px 9px $shadowColor;
-$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+$thetransition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
 
 @font-face {
-    font-family: 'Comforta';
-    src: url('../fonts/Comfortaa-VariableFont_wght.ttf') format('truetype'); /* IE9 Compat Modes */
+    font-family: "Comforta";
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
@@ -27,7 +30,7 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Comforta';
+    font-family: "Comforta";
     color: $fontColorDark;
 }
 
@@ -57,11 +60,11 @@ nav {
             text-decoration: none;
             color: black;
 
-            &:hover:before, &.active:before {
+            &:hover:before,
+            &.active:before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
-                
             }
 
             &:before {
@@ -91,7 +94,7 @@ header {
     box-shadow: $shadow;
     transform: translateY(-30px) skewY(1deg);
     overflow: hidden;
-    
+
     .header-container {
         position: relative;
         height: 100%;
@@ -109,14 +112,14 @@ header {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-    
+
             h1 {
                 color: $primaryColorHighlight;
                 font-size: 5em;
                 transform: rotate(-90deg) translateY(-30px);
             }
         }
-    
+
         .company {
             z-index: 1;
             margin-left: 2em;
@@ -129,15 +132,15 @@ header {
                 font-size: 1.3em;
             }
         }
-    
-        #headerImg {
+
+        #header-img {
             position: absolute;
             right: 1em;
             width: 55%;
             height: auto;
             z-index: 0;
         }
-    
+
         .bottom {
             position: absolute;
             width: 100%;
@@ -146,11 +149,10 @@ header {
             display: flex;
             justify-content: center;
         }
-    } 
+    }
 }
 
 main {
-
     section {
         margin-top: 2em;
         h2 {
@@ -177,14 +179,13 @@ main {
     }
 }
 
-#whoAreWe {
+#who-are-we {
     article {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         text-align: center;
-        // width: 30%;
 
         p {
             line-height: 1.6em;
@@ -231,14 +232,14 @@ footer {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
 
-            .footer-section { 
+            .footer-section {
                 h5 {
                     margin-bottom: 0.8em;
                 }
 
                 ul {
                     list-style-type: none;
-        
+
                     li {
                         font-size: 0.8em;
                         line-height: 1.5em;
@@ -303,8 +304,11 @@ footer {
     justify-content: center;
 }
 
-input[type=text], select, textarea {
-    font-family: 'Comforta';
+input[type="text"],
+select,
+textarea {
+    font-family: "Comforta";
+    font-size: 1em;
     width: 100%;
     padding: 1em 1em;
     margin: 1em 0;
@@ -313,15 +317,16 @@ input[type=text], select, textarea {
     border: 1px solid $primaryColorHighlight;
     box-shadow: inset 1px 2px 3px $shadowColor;
     box-sizing: border-box;
-} 
+}
 
 button {
-    font-family: 'Comforta';
+    font-family: "Comforta";
+    font-size: 1em;
     background-color: transparent;
     color: $primaryColor;
     border: 3px solid $primaryColor;
     border-radius: 8px;
     padding: 1em 5em;
-    margin: 8px 0;
+    margin: 1em 0;
     cursor: pointer;
 }

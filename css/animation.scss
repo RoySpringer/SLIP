@@ -1,3 +1,6 @@
+/*
+Arrow header animations
+*/
 .svg-arrow {
     animation: pointingArrow 3s ease-in-out infinite;
 }
@@ -6,6 +9,33 @@
     animation: pointingCircle 3s ease-in-out 200ms infinite;
 }
 
+@keyframes pointingCircle {
+    0% {
+        transform: translate(36.811px, 0);
+    }
+    50% {
+        transform: translate(36.811px, 2em);
+    }
+    100% {
+        transform: translate(36.811px, 0);
+    }
+}
+
+@keyframes pointingArrow {
+    0% {
+        transform: translate(-897.189px, -965px);
+    }
+    50% {
+        transform: translate(-897.189px, calc(-965px + 2em));
+    }
+    100% {
+        transform: translate(-897.189px, -965px);
+    }
+}
+
+/*
+Header Image animation
+*/
 #footleft {
     animation: moveFoot 2s ease-in-out 200ms infinite;
 }
@@ -157,29 +187,5 @@
     }
     100% {
         transform: translate(0px, -1.51px) rotate(0deg);
-    }
-}
-
-@keyframes pointingCircle {
-    0% {
-        transform: translate(36.811px, 0);
-    }
-    50% {
-        transform: translate(36.811px, 2em);
-    }
-    100% {
-        transform: translate(36.811px, 0);
-    }
-}
-
-@keyframes pointingArrow {
-    0% {
-        transform: translate(-897.189px, -965px);
-    }
-    50% {
-        transform: translate(-897.189px, calc(-965px + 2em));
-    }
-    100% {
-        transform: translate(-897.189px, -965px);
     }
 }
