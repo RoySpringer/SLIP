@@ -430,7 +430,7 @@ button:active {
 
 button:focus {
   outline: none;
-  color: #fcca3d;
-  border: 3px solid #fcca3d;
+  -webkit-box-shadow: 0px 0px 5px #5877b6;
+          box-shadow: 0px 0px 5px #5877b6;
 }
 /*# sourceMappingURL=style.css.map */
