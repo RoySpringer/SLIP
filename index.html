@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
   <meta charset="UTF-8">
@@ -7,21 +7,14 @@
   <title>Slip | Home</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animation.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav>
     <ul>
-      <a class="active" href="#">
-        <li>Home</li>
-      </a>
-      <a href="#about">
-        <li>About</li>
-      </a>
-      <a href="#contact">
-        <li>Contact</li>
-      </a>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <header>
@@ -641,7 +634,7 @@
       <h2>Over Ons</h2>
       <div>
         <p>
-          <img src="img/Creativity Education.svg" alt="Creativity">
+          <img src="img/creativity-education.svg" alt="Creativity">
         </p>
         <p>Slip B.V. is een startup in de onderwijssector, gevestigd te Dordrecht. SLIP staat voor Social Life
           Instant Performance en is recentelijk opgericht om een gamified social media platform voor de onderwijsmarkt
@@ -654,12 +647,12 @@
       <h2>Wie zijn wij?</h2>
       <div class="card-container">
         <article class="card">
-          <img src="img/Nermin.jpg" alt="Person">
+          <img src="img/n-kadiric.jpg" alt="Person">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor qui eligendi ratione exercitationem
             expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus.
             Aliquid recusandae iusto fugit.</p>
           <hr>
-          <p class="name">Nermin Kadiric</p>
+          <h4 class="name">Nermin Kadiric</h4>
         </article>
         <article class="card">
           <img src="https://via.placeholder.com/200" alt="Person">
@@ -667,17 +660,17 @@
             expedita sint accusantium necessitatibus provident quod. Est, et! Dicta accusamus atque natus.
             Aliquid recusandae iusto fugit.</p>
           <hr>
-          <p class="name">Abdel Agharbi</p>
+          <h4>Abdel Agharbi</h4>
         </article>
         <article class="card">
-          <img src="img/Roy.jpg" alt="Person">
+          <img src="img/r-springer.jpg" alt="Person">
           <p>Ik ben Roy Springer medeoprichter van Slip B.V..Ik ben vanuit de Game Industrie terecht gekomen
             in de onderwijswereld.
             Ik heb veel kennis van digitale tools, gamification en neem ik altijd de creativiteit uit de Game industrie
             mee in alle projecten. Ik zet mijn creativiteit in om de digitale wereld, gamification,
             bedrijven en scholen met elkaar te verbinden.</p>
           <hr>
-          <p class="name">Roy Springer</p>
+          <h4>Roy Springer</h4>
         </article>
       </div>
     </section>
@@ -685,13 +678,13 @@
       <h2>Contact</h2>
       <form id="contact-form" action="mailto:sociallifeinstantperformance@gmail.com" method="get"
         enctype="application/x-www-form-urlencoded">
-        <label for="name">Naam:
+        <label>Naam:
           <input type="text" name="name">
         </label>
-        <label for="subject">Onderwerp:
+        <label>Onderwerp:
           <input type="text" name="subject">
         </label>
-        <label for="body">Bericht:</label>
+        <label >Bericht:
           <textarea name="body" rows="10"></textarea>
         </label>
         <div class="form-bottom"><button>Verstuur</button></div>
@@ -700,7 +693,7 @@
   </main>
   <footer>
     <div class="contained">
-      <section>
+      <div class="footer-grid">
         <div class="footer-section">
           <h5>Sitemap</h5>
           <ul>
@@ -727,12 +720,12 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
+      </div>
+      <div>
         <p>Copyright © 2020 All rights reserverd - Designed by Slip B.V.</p>
-      </section>
+      </div>
     </div>
-    <img src="img/Footershape.svg" alt="Cloud">
+    <img src="img/footer-shape.svg" alt="Cloud">
   </footer>
   <script>
     let contactForm = document.getElementById("contact-form");

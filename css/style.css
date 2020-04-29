@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Comforta";
-  src: url("../fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/comfortaa-variable-font_wght.ttf") format("truetype");
 }
 
 * {
@@ -46,11 +46,16 @@ nav ul {
   list-style: none;
 }
 
-nav ul a {
+nav ul li {
   position: relative;
+  height: 100%;
+}
+
+nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -60,18 +65,17 @@ nav ul a {
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
   padding: 0 2em;
-  height: 100%;
   text-decoration: none;
   color: black;
 }
 
-nav ul a:hover:before, nav ul a.active:before {
+nav ul li a:hover:before, nav ul li a.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-nav ul a:before {
+nav ul li a:before {
   content: "";
   position: absolute;
   left: 0;
@@ -244,7 +248,7 @@ main section h2 {
   margin: 1em 0;
 }
 
-#who-are-we article .name {
+#who-are-we article h4 {
   color: #5877b6;
 }
 
@@ -277,7 +281,7 @@ footer .contained {
   margin-bottom: 2em;
 }
 
-footer .contained section:first-child {
+footer .contained .footer-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -286,25 +290,25 @@ footer .contained section:first-child {
       grid-template-rows: 1fr 1fr;
 }
 
-footer .contained section:first-child .footer-section h5 {
+footer .contained .footer-grid .footer-section h5 {
   margin-bottom: 0.8em;
 }
 
-footer .contained section:first-child .footer-section ul {
+footer .contained .footer-grid .footer-section ul {
   list-style-type: none;
 }
 
-footer .contained section:first-child .footer-section ul li {
+footer .contained .footer-grid .footer-section ul li {
   font-size: 0.8em;
   line-height: 1.5em;
 }
 
-footer .contained section:first-child .footer-section ul li a {
+footer .contained .footer-grid .footer-section ul li a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
 
-footer .contained section:first-child .footer-section:last-child {
+footer .contained .footer-grid .footer-section:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +324,7 @@ footer .contained section:first-child .footer-section:last-child {
   grid-column: 1 / span 2;
 }
 
-footer .contained section p {
+footer .contained div p {
   font-size: 0.8em;
   line-height: 1.5em;
 }
@@ -383,10 +387,21 @@ textarea {
   display: inline-block;
   border-radius: 8px;
   border: 1px solid #abbfda;
-  -webkit-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #fcca3d;
+  -webkit-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -399,5 +414,12 @@ button {
   padding: 1em 5em;
   margin: 1em 0;
   cursor: pointer;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+button:hover {
+  color: #fcca3d;
+  border: 3px solid #fcca3d;
 }
 /*# sourceMappingURL=style.css.map */
