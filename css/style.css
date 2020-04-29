@@ -1,3 +1,11 @@
+#about div {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @font-face {
   font-family: "Comforta";
   src: url("../fonts/comfortaa-variable-font_wght.ttf") format("truetype");
@@ -182,6 +190,7 @@ header .header-container .bottom {
 }
 
 main {
+  margin: 0 2em -500px 2em;
   margin-bottom: -500px;
 }
 
@@ -192,15 +201,6 @@ main section {
 main section h2 {
   text-align: center;
   margin-bottom: 1em;
-}
-
-#about div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 #about div img {
@@ -256,6 +256,7 @@ footer {
   z-index: -1;
   position: relative;
   height: 840px;
+  padding: 0 2em;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.7);
   display: -webkit-box;
@@ -268,17 +269,17 @@ footer {
 
 footer .contained {
   width: 100%;
-  bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2em;
 }
 
 footer .contained .footer-grid {
@@ -288,6 +289,7 @@ footer .contained .footer-grid {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  margin-bottom: 2em;
 }
 
 footer .contained .footer-grid .footer-section h5 {
@@ -324,7 +326,11 @@ footer .contained .footer-grid .footer-section:last-child {
   grid-column: 1 / span 2;
 }
 
-footer .contained div p {
+footer .contained .footer-copyright {
+  margin-bottom: 2em;
+}
+
+footer .contained .footer-copyright p {
   font-size: 0.8em;
   line-height: 1.5em;
 }
@@ -343,19 +349,11 @@ footer img {
 }
 
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.card-container .card {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {

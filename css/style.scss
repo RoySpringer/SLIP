@@ -10,6 +10,12 @@ $shadowColor: rgba(
 $shadow: 0 3px 9px $shadowColor;
 $thetransition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
 
+%mobile-grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @font-face {
     font-family: "Comforta";
     src: url("../fonts/comfortaa-variable-font_wght.ttf") format("truetype");
@@ -69,7 +75,7 @@ nav {
                     -webkit-transform: scaleX(1);
                     transform: scaleX(1);
                 }
-    
+
                 &:before {
                     content: "";
                     position: absolute;
@@ -165,13 +171,14 @@ main {
         }
     }
 
+    margin: 0 2em -500px 2em;
     margin-bottom: -500px;
 }
 
 #about {
     div {
-        display: flex;
-        justify-content: space-evenly;
+        @extend %mobile-grid;
+
         img {
             width: 100%;
             height: auto;
@@ -218,6 +225,7 @@ footer {
     z-index: -1;
     position: relative;
     height: 840px;
+    padding: 0 2em;
     overflow: hidden;
     color: rgba(255, 255, 255, 0.7);
     display: flex;
@@ -225,16 +233,16 @@ footer {
 
     .contained {
         width: 100%;
-        bottom: 2em;
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-end;
         justify-content: space-between;
-        margin-bottom: 2em;
 
         .footer-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            margin-bottom: 2em;
 
             .footer-section {
                 h5 {
@@ -264,11 +272,12 @@ footer {
             }
         }
 
-        div {
+        .footer-copyright {
             p {
                 font-size: 0.8em;
                 line-height: 1.5em;
             }
+            margin-bottom: 2em;
         }
     }
 
@@ -287,12 +296,9 @@ footer {
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    .card {
-        flex-basis: 30%;
-    }
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
