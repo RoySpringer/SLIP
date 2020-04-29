@@ -422,4 +422,15 @@ button:hover {
   color: #fcca3d;
   border: 3px solid #fcca3d;
 }
+
+button:active {
+  color: #001237;
+  border: 3px solid #001237;
+}
+
+button:focus {
+  outline: none;
+  color: #fcca3d;
+  border: 3px solid #fcca3d;
+}
 /*# sourceMappingURL=style.css.map */

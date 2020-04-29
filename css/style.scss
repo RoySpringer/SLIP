@@ -346,4 +346,15 @@ button {
         color: $secondaryColor;
         border: 3px solid $secondaryColor;
     }
+
+    &:active {
+        color: $fontColorDark;
+        border: 3px solid $fontColorDark;
+    }
+
+    &:focus {
+        outline: none;
+        color: $secondaryColor;
+        border: 3px solid $secondaryColor;
+    }
 }
