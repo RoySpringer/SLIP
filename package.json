@@ -1,0 +1,49 @@
+{
+  "name": "company-slip-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch webpack.dev.js",
+    "server": "node server.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoySpringer/SLIP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoySpringer/SLIP/issues"
+  },
+  "homepage": "https://github.com/RoySpringer/SLIP#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "csv-loader": "^3.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2",
+    "xml-loader": "^1.2.1"
+  },
+  "browserslist": [
+    "cover 80%",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
+}
