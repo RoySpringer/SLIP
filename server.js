@@ -3,7 +3,13 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const app = express();
-const config = require('./webpack.dev.js');
+let stringConfig = 'dev';
+process.argv.forEach((val, index) => {
+  if(val ==="-p" || val === "--production") {
+    stringConfig = 'prod';
+  }
+});
+const config = require(`./webpack.${stringConfig}.js`);
 const compiler = webpack(config);
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
