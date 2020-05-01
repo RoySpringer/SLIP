@@ -185,7 +185,7 @@ header {
 
 main {
     margin: 0 1em -500px 1em;
-    margin-bottom: -500px;
+    min-width: 300px;
     section {
         margin-top: 2em;
         h2 {
@@ -197,14 +197,15 @@ main {
 
 #about {
     div {
-        @extend %mobile-grid;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(calc(300px - 4em), 1fr));
 
         img {
             width: 100%;
             height: auto;
         }
         p {
-            flex-basis: 48%;
             line-height: 2em;
         }
     }
@@ -223,7 +224,7 @@ main {
         text-align: center;
 
         p {
-            line-height: 1.6em;
+            line-height: 2em;
         }
 
         img {
@@ -236,7 +237,7 @@ main {
         hr {
             width: 6em;
             border: 2px solid $primaryColor;
-            margin: 1em 0;
+            margin: 1.5em 0;
         }
 
         h4 {
