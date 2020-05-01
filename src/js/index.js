@@ -1,5 +1,5 @@
-require('../css/style.scss');
-require('../css/animation.scss');
+import '../css/style.scss';
+import '../css/animation.scss';
 
 let contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", (event) => {
