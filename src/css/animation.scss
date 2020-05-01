@@ -189,3 +189,58 @@ Header Image animation
         transform: translate(0px, -1.51px) rotate(0deg);
     }
 }
+
+/*
+Wifi Animation
+*/
+#ball {
+    transform-origin: 1% 11.2%;
+    animation: ballPop 5s ease-in-out infinite;
+}
+
+#stripe {
+    transform-origin: 1% 11.2%;
+    animation: stripe1 5s ease-in-out 500ms infinite;
+}
+
+#stripe2 {
+    transform-origin: 1% 11.2%;
+    animation: stripe2 5s ease-in-out 1000ms infinite;
+}
+
+@keyframes ballPop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    90% {
+        transform: scale(1);
+    }
+}
+
+$wifiDistance: 3px;
+@keyframes stripe1 {
+    0% {
+        transform: translate(9.461px, 23.656px)
+    }
+    50% {
+        transform: scale(1.1) translate(calc(9.461px + #{$wifiDistance}), calc(23.656px - #{$wifiDistance}))
+    }
+    90% {
+        transform: translate(9.461px, 23.656px)
+    }
+}
+
+@keyframes stripe2 {
+    0% {
+        transform: translate(9.461px, 0px)
+    }
+    50% {
+        transform: scale(1.1) translate(calc(9.461px + #{$wifiDistance}), -#{$wifiDistance})
+    }
+    90% {
+        transform: translate(9.461px, 0px);
+    }
+}
