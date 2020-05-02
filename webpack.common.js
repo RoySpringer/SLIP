@@ -36,19 +36,15 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
                     'postcss-loader'
                 ],
             },
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader', {
-                    loader: 'postcss-loader',
-                    options: {
-                        plugins: () => [autoprefixer()]
-                    }
-                }]
+                test: /\.css$/i,
+                use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
